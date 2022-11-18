@@ -130,7 +130,59 @@ const ten = (array, element) => {
     }
 }
 
-console.log(ten(["hello", "what's up", "bye"], "hello"))
+//11th Iterate Through All an Array's Items Using For Loops
+
+////IMPORTAN TO ASK ANDRES ABOUT THE INDEXES IN THIS PARTICULAR CASE**********************************
+
+
+const eleven = (array, element) => {
+    let newArray = []
+    for(let i = 0; i < array.length; i++)
+    if (array[i].indexOf(element) == -1){
+         newArray.push(array[i])
+    } 
+    return newArray
+}
+
+//12th Create complex multi-dimensional arrays
+
+const twelve = [
+    "first",
+    [
+        "second",
+        [
+            "third"
+        ]
+    ],
+    [
+        "second",
+        [
+            "third",
+            [
+                "fourth",
+                [
+                    "fifth"
+                ]
+            ]
+        ]
+
+    ]
+]
+
+// 13th Add Key-Value Pairs to JavaScript Objects
+
+const thirteen = {
+    Name: "Luis",
+    Lastname: "Moguea"
+}
+
+thirteen.age = 27
+thirteen["Marital status"] = "Single"
+const city = "Current City"
+thirteen[city] = "Medellin-Antioquia"
+
+
+console.log(thirteen)
 
 
 
