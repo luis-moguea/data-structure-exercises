@@ -7,7 +7,7 @@
 //Your array should contain at least one string, 
 //one number, and one boolean.
 
-const one = [
+/*const one = [
     [
         {
             one: 1,
@@ -132,7 +132,7 @@ const ten = (array, element) => {
 
 //11th Iterate Through All an Array's Items Using For Loops
 
-////IMPORTAN TO ASK ANDRES ABOUT THE INDEXES IN THIS PARTICULAR CASE**********************************
+//IMPORTANT TO ASK ANDRES ABOUT THE INDEXES IN THIS PARTICULAR CASE**********************************
 
 
 const eleven = (array, element) => {
@@ -182,7 +182,73 @@ const city = "Current City"
 thirteen[city] = "Medellin-Antioquia"
 
 
-console.log(thirteen)
+// 14th Access Property Names with Bracket Notation
+
+//const dataTest = {hola: "hola", chao: "chao", edad: 32, frase: "thanks"}
+const fourteen = (Items) => {
+    return dataTest[Items]
+}
 
 
+//15th Use the delete Keyword to Remove Object Properties
 
+//const dataTest = {hola: "hola", chao: "chao", edad: 32, frase: "thanks"}
+
+delete dataTest.chao 
+delete dataTest.edad
+delete dataTest.hola
+
+//16th Check if an Object has a Property
+
+//IMPORTANT TO ASK ANDRES ABOUT THE INDEXES IN THIS PARTICULAR CASE**********************************
+
+const DATA = {hola: "hola", chao: "chao", edad: 32, frase: "thanks"};
+
+DATA.hasOwnProperty("edad");
+
+"edad" in DATA*/
+
+//17th Iterate Through the Keys of an Object with
+// a for...in Statement
+
+
+const users = {
+    Alan: {
+      online: false
+    },
+    Jeff: {
+      online: true
+    },
+    Sarah: {
+      online: true
+    }
+  }
+
+  users.Freddy = {
+    online: true
+  }
+
+  users.Carl = {
+    online: false
+  }
+
+const seventeen = (userObj) => {
+    let result = 0 
+    for(let user in userObj){
+        if(userObj[user].online === true){
+            result++
+        }
+    }
+    return result
+}
+
+for(let user in users){
+   // console.log(user)
+}
+
+
+//18th Generate an Array of All Object Keys with Object.keys()
+
+Object.keys(users)
+
+console.log(Object.keys(users))
