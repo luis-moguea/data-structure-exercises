@@ -7,7 +7,7 @@
 //Your array should contain at least one string, 
 //one number, and one boolean.
 
-/*const one = [
+const one = [
     [
         {
             one: 1,
@@ -206,7 +206,7 @@ const DATA = {hola: "hola", chao: "chao", edad: 32, frase: "thanks"};
 
 DATA.hasOwnProperty("edad");
 
-"edad" in DATA*/
+"edad" in DATA
 
 //17th Iterate Through the Keys of an Object with
 // a for...in Statement
@@ -251,4 +251,34 @@ for(let user in users){
 
 Object.keys(users)
 
-console.log(Object.keys(users))
+//console.log(Object.keys(users))
+
+//19th Modify an Array Stored in an Object
+
+const user = {
+    name: 'Kenneth',
+    age: 28,
+    data: {
+      username: 'kennethCodesAllDay',
+      joinDate: 'March 26, 2016',
+      organization: 'freeCodeCamp',
+      friends: [
+        'Sam',
+        'Kira',
+        'Tomo'
+      ],
+      location: {
+        city: 'San Francisco',
+        state: 'CA',
+        country: 'USA'
+      }
+    }
+  };
+
+  const nineteen = (userObj, friend) => {
+    userObj.data.friends.push(friend)
+    return userObj.data.friends
+  }
+
+  console.log(nineteen(user, "LUIS SUCCESS"))
+
