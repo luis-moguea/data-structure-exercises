@@ -94,7 +94,7 @@ const seven = (array) => {
     return newArray
 }
 
-
+let test = [kjdfkjdf,ksdjjs,4,8,hghghg]
 // 8th Copy an Array with the Spread Operator
 
 //copy an array using spread operator
